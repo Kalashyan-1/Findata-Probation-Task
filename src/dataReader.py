@@ -4,6 +4,14 @@ from typing import Dict
 
 class QuarterDataReader:
     
+    """
+    A class for reading data from a quarterly report file.
+
+    Attributes:
+    - filePath (str): The path to the file containing quarterly report data.
+    - data (Dict[str, float]): A dictionary to store the quarterly report data.
+    """
+    
     def __init__(self, filePath: str) -> None:
         self.data = {}
         self.path = filePath

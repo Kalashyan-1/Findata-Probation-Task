@@ -1,11 +1,15 @@
 from src.dataAnalyzer import QuarterDataAnalyzer
 
+
 def main():
-    companyName = input("Enter the company name (CompanyA or CompanyB): ")
+
+    """
+    Main function to analyze quarterly data for a company.
+    """
+    companyName = input("Enter the company name: ")
     analyser = QuarterDataAnalyzer(companyName)
     results = analyser.analyzData()
 
-    formatted_results = {key: f"{value:.2f}" for key, value in results.items()}
-    print(formatted_results)
+    print(results)
 
 main()
