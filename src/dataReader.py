@@ -2,6 +2,9 @@ import os
 from typing import Dict
 
 
+
+
+
 class QuarterDataReader:
     
     """
@@ -26,7 +29,9 @@ class QuarterDataReader:
                         self.data[key] = float(value.replace('$', '').replace(',', ''))
         else:
             print("Could not open file " + self.path)
+
+
     
     def getData(self) -> Dict[str, float]:
         return self.data
-    
+     
